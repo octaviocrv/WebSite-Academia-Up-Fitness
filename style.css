@@ -1,0 +1,404 @@
+/* FONTS ------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap');
+ 
+/* RESET ------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  
+}
+
+
+
+
+
+/* TELA DE FUNDO -------------------------------------*/
+
+
+
+
+html {
+  height: 225vw;
+  font-size: 62.5%;
+  color: white;
+  font-family:'Poppins', sans-serif;
+  font-weight: 400;
+  
+
+}
+
+body {
+  background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1));
+  background-attachment: scroll;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+
+
+
+/* Navigation - menu - itens -------------------------------------*/
+
+
+
+header .header1 {
+  
+  width: 90%;
+  background-color: rgba(51, 51, 51, 0.2);
+  position: fixed;
+
+  
+}
+
+
+
+
+.conteudo-menu {
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.4rem; 
+  
+
+  
+}
+
+
+.conteudo-menu h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: none;
+  
+}
+
+section .logomenu{
+width: 60px;
+}
+
+
+
+.conteudo-menu .itens-lista {
+  display: flex; 
+  list-style: none;
+  gap: 10px; 
+}
+
+
+.conteudo-menu .itens-lista a {
+  color: white;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  transform: 2ms ease-in;
+  position: relative;
+  
+}
+
+.conteudo-menu .itens-lista a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0; 
+  width: 0px;
+  height: 1px;
+  background-color: #FA7F08;
+  transition: all 0.5s ease;
+}
+
+
+.conteudo-menu .itens-lista a:hover::before {
+width: 100%;
+
+}
+
+
+
+/* Centro - Conteudo Principal -------------------------------------*/
+
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+/* Textos e conteudos principais  -------------------------------------*/
+
+.texto-primario {
+  width: 850px;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.texto-secundario {
+  margin-bottom: 7rem;
+  font-size: 2rem;
+  color: rgba(165, 165, 165);
+  text-transform: uppercase;
+ 
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+
+}
+
+/* Butões e Divider -------------------------------------*/
+
+.botoes {
+ display: flex;
+ gap: 28px;
+ justify-content: center;
+ 
+}
+
+.botoes button {
+  width: 250px;
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  border-radius: 20px;
+  position: relative;
+  transition: 1.5s;
+ 
+}
+
+.botoes button:hover {
+  color: rgb(231, 138, 38) ;
+  border: none; 
+
+}
+
+.botoes button:before {
+  content: '';
+  width: 100%;
+  border-radius: 20px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+  height: 60px;
+  background-color: rgba(61, 61, 61);
+  z-index: -1;
+  transition: 1s;
+  
+}
+
+.botoes button:hover:before {
+  width: 100%;
+  
+  
+}
+
+.button {
+  background-color: white;
+  color: black;
+  height:6.0rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 1.3rem;
+  border-radius: 0.25rem;
+  
+}
+
+.divider-1 {
+  height: 3px;
+  background:  linear-gradient(rgba(231, 138, 8), rgb(200, 145, 68));
+  margin-bottom: 100px;
+  opacity: 80%;
+
+}
+
+.divider-2 {
+  height: 6px;
+  background:  linear-gradient(rgba(231, 138, 8), rgb(200, 145, 68));
+  margin-bottom: 100px;
+  opacity: 80%;
+
+
+}
+
+
+
+
+/* ABOUT  -------------------------------------*/
+
+.sobre-nos {
+  display: flex;
+  gap: 350px; 
+  
+
+
+}
+
+section div .title-section, .subtitle-section {
+  margin-left: 410px;
+
+
+
+}
+
+section .imagem-section {
+  
+  width: 450%;
+ 
+}
+
+section div .title-section {
+  font-size: 4rem;
+  margin-top: -15px;
+  
+   
+}
+
+section .subtitle-section  {
+  margin-top: 50px;
+  height: 10%;
+  font-size: 1.5rem;
+  margin-right: 160px;
+}
+
+
+/* serviços  -------------------------------------*/
+
+section .serviços {
+  margin-top: 50px;
+  font-size: 4rem;
+  margin-right: 160px;
+  margin-top: 600px;
+  margin-left: 300px;
+
+}
+
+
+section .header-cards {
+margin-bottom: 4rem;
+font-size: 4rem;
+text-align: center;
+margin-top: 100px;
+}
+
+section .headerp {
+  font-size: 2rem;
+}
+
+/* serviços  cards  -------------------------------------*/
+
+section .container {
+  display: flex;
+  gap: 20rem;
+  margin-top: 25rem;
+margin-left: 20rem;
+margin-right: 20rem;
+
+}
+
+.icon-tamanho {
+  width: 20rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  text-align: center;
+}
+
+.icon-p {
+  font-size: 1.2rem;
+}
+
+
+
+
+/* contatos  -------------------------------------*/
+
+
+
+section .icons-contact {
+width: 30px;
+margin-left: 29rem;
+
+}
+
+section .header-contact {
+margin-bottom: 6rem;
+}
+
+section .p-contact {
+
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  height: 8rem
+
+}
+
+section .texto-contato { 
+  margin-bottom: 2rem;
+  margin-top: 45rem;
+  font-size: 5rem;
+  margin-left: 29rem;
+  
+
+}
+
+
+section .button-contact {
+  gap: 15px;
+  justify-content: center;
+  background-color: white;
+  margin-left: 29rem;
+  height: 4.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  font-size: 1.7rem;
+  
+}
+
+
+/* rodape  -------------------------------------*/
+
+
+section .logo-rodape {
+  width: 60px;
+  float: left;
+}
+
+
+section .rodapé {
+
+}
